@@ -24,9 +24,6 @@
 
 */
 
-#ifndef __RENDER_MANAGER_H__
-#define __RENDER_MANAGER_H__
-
 #include "RenderManager.h"
 #include <math.h>
 
@@ -128,5 +125,3 @@ void RenderManager::Render()
         glUniform1f(glGetUniformLocation(mProgram, "uTime"), sin(mTime * _grad_pi));
         glDrawArrays(GL_TRIANGLE_FAN, 0, 4);
 }
-
-#endif
