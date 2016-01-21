@@ -1,11 +1,3 @@
-//
-//  CameraDelegate.m
-//  CameraDemo
-//
-//  Created by Noyan Gunday on 20/01/2016.
-//  Copyright © 2016 Happy Finish. All rights reserved.
-//
-
 #import "CaptureManager.h"
 #import "RenderManager.h"
 
