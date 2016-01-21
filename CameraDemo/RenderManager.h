@@ -23,6 +23,8 @@
   SOFTWARE.
 
 */
+#ifndef __RENDER_MANAGER_H__
+#define __RENDER_MANAGER_H__
 
 #import <OpenGLES/ES2/glext.h>
 
@@ -45,3 +47,5 @@ private:
         GLuint                          mProgram;
         GLfloat                         mTime;
 };
+
+#endif
