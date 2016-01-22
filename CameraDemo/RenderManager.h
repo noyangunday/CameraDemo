@@ -31,7 +31,7 @@
 class RenderManager
 {
 public:
-        RenderManager();
+        RenderManager(GLfloat width, GLfloat height);
         virtual ~RenderManager();
         void Render();
         void UpdateEffect();
@@ -46,6 +46,8 @@ private:
         GLuint                          mVertexBuffer;
         GLuint                          mProgram;
         GLfloat                         mTime;
+        GLfloat                         mWidth;
+        GLfloat                         mHeight;
 };
 
 #endif

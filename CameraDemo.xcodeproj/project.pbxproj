@@ -141,6 +141,7 @@
 				TargetAttributes = {
 					7EC444081C502B5F008E89D0 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = DWJ2L662CX;
 					};
 				};
 			};
@@ -296,7 +297,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CameraDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Visuem.CameraDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -307,7 +310,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CameraDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Visuem.CameraDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

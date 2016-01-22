@@ -65,8 +65,13 @@
         view.context = self.mGLContext;
         view.drawableDepthFormat = GLKViewDrawableDepthFormat24;
 
+        CGRect screenRect = [[UIScreen mainScreen] bounds];
+        CGFloat scale = [[UIScreen mainScreen] scale];
+        CGFloat width = screenRect.size.width * scale;
+        CGFloat height = screenRect.size.height * scale;
+
         [EAGLContext setCurrentContext:self.mGLContext];
-        mRenderManager = new RenderManager();
+        mRenderManager = new RenderManager(width, height);
         mCaptureManager = [[CaptureManager alloc] initWithContext:self.mGLContext];
 }
 
@@ -98,7 +103,7 @@
         Derived from UIViewController        */
 - (UIInterfaceOrientationMask) supportedInterfaceOrientations
 {
-        return UIInterfaceOrientationMaskPortrait;
+        return UIInterfaceOrientationMaskLandscapeLeft;
 }
 
 /*
